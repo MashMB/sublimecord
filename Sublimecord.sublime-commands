@@ -1,0 +1,10 @@
+[
+	{
+		"caption": "Sublimecord: Connect to Discord",
+		"command": "connect"
+	},
+	{
+		"caption": "Sublimecord: Disconnect from Discord",
+		"command": "disconnect"
+	}
+]

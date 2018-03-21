@@ -1,0 +1,26 @@
+[
+	{
+		"caption": "Preferences",
+		"mnemonic": "n",
+		"id": "preferences",
+		"children": [
+			{
+				"caption": "Package Settings",
+				"mnemonic": "P",
+				"id": "package-settings",
+				"children": [
+					{
+						"caption": "Sublimecord",
+						"children": [
+							{
+								"command": "open_file",
+								"args": {"file": "${packages}/sublimecord/Sublimecord.sublime-settings"},
+								"caption": "Edit settings"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
