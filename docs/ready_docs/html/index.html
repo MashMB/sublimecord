@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to documentation of Sublimecord! &mdash; Sublimecord 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Sublimecord 1.0.0 documentation" href="#"/>
+        <link rel="next" title="Sublimecord" href="docs/sublimecord.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> Sublimecord
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="docs/sublimecord.html">Sublimecord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/extensions.html">Extensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs/extensions.html#sublime-text-3-informations">Sublime Text 3 informations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/extensions.html#unknown-file-informations">Unknown file informations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/extensions.html#supported-programming-languages">Supported programming languages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="docs/discord_ipc.html">Discord IPC Wrapper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs/discord_ipc.html#wrapper-content-significant-files">Wrapper content (significant files)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/discord_ipc.html#discord-ipc-wrapper-documentation">Discord IPC wrapper documentation</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Sublimecord</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to documentation of Sublimecord!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-documentation-of-sublimecord">
+<h1>Welcome to documentation of Sublimecord!<a class="headerlink" href="#welcome-to-documentation-of-sublimecord" title="Permalink to this headline">¶</a></h1>
+<p>Sublimecord is a Sublime Text 3 plugin that integrates your favourite text editor with Discord and allows you to share your work status with Discord community via Discord Rich Presence.</p>
+<img alt="_images/sublimecord_plugin.png" class="align-center" src="_images/sublimecord_plugin.png" />
+<p>Sublimecord has support for 55 programming languages that are also supported by Sublime Text 3. If you want to include more languages, just post it on <a class="reference external" href="https://github.com/MashMB/sublimecord/issues">GitHub issues page</a>.</p>
+<div class="section" id="how-it-works">
+<h2>How it works?<a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h2>
+<p>Sublimecord is based on my other opensource project posted on GitHub (<a class="reference external" href="https://github.com/MashMB/discord_rpc_client">discord_rpc_client</a>) that ensures communication with Discord. Plugin identifies opened file and folder name, sets activity timer.</p>
+<p>Plugin works <strong>only when Discord app is opened on client PC</strong> (Discord Rich Presence mechanism enforces this) and supports all common platforms (Windows, Linux and MacOS).</p>
+<p>To activate plugin, just use <strong>command palette</strong>:</p>
+<img alt="_images/sublimecord_commands.png" class="align-center" src="_images/sublimecord_commands.png" />
+<p>After executing <strong>connect</strong> command, your status on Discord should be changed.</p>
+<p>In plugin settings you can find options to to hide project and file name.</p>
+</div>
+<div class="section" id="why-there-is-no-autoconnect-feature">
+<h2>Why there is no autoconnect feature?<a class="headerlink" href="#why-there-is-no-autoconnect-feature" title="Permalink to this headline">¶</a></h2>
+<p>There is no autoconnect feature because Discord app is not always opened when editor is (as it is written above, plugin needs Discord app to be opened on client PC) and we do not want to see error messages on screen. What is more, we do not always want to share our status while programming. It is not a big deal to use <strong>command palette</strong>.</p>
+</div>
+<div class="section" id="why-sublime-text-3-must-be-closed-after-disconnect-command">
+<h2>Why Sublime Text 3 must be closed after disconnect command?<a class="headerlink" href="#why-sublime-text-3-must-be-closed-after-disconnect-command" title="Permalink to this headline">¶</a></h2>
+<p>It is a little bit tricky. Sublime Text 3 uses it’s own Python interpreter. Sublimecord plugin gets Sublime Text 3 process PID and sends it to Discord. Discord will show your status to the moment when process with given PID disappears. It can be achived only by closing editor and can not be tricked easily (there is option to do it by subprocess but client need to have Python installed on their machine so I do not see any sense to add this feature).</p>
+<p>For people that wants to know how plugin works under the hood I prepared complex documentation that can be found here: <a class="reference external" href="https://github.com/MashMB/sublimecord/docs/ready_docs/html">Welcome to documentation of Sublimecord!</a></p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Sublimecord is not available to download from main <strong>Package Control</strong> channel.</p>
+<p>Plugin installation is simple, just use a <strong>command palette</strong> and type:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Package Control: Add Repository
+</pre></div>
+</div>
+<p>Nextly paste link to the GitHub repo:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>https://github.com/MashMB/sublimecord
+</pre></div>
+</div>
+<p>The last step is to find <strong>Sublimecord</strong> plugin on the list after using <strong>command palette</strong> command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Package Control: Install Package
+</pre></div>
+</div>
+<p>There is known error with SSL certificate while downloading plugins from custom repositories (GitHub security update), so if above instructions do not work, install plugin manually, just download the repository and unpack it in Sublime Text 3 packages folder as follow:</p>
+<p>Windows:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>C:<span class="se">\U</span>sers<span class="se">\&lt;</span>username&gt;<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\S</span>ublime Text <span class="m">3</span><span class="se">\P</span>ackages<span class="se">\</span>
+</pre></div>
+</div>
+<p>Linux:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/home/&lt;username&gt;/.config/sublime-text-3/Packages/
+</pre></div>
+</div>
+<p>MacOS:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>~/Library/Application Support/Sublime Text <span class="m">3</span>/Packages/
+</pre></div>
+</div>
+</div>
+<div class="section" id="bugs-and-issues">
+<h2>Bugs and issues<a class="headerlink" href="#bugs-and-issues" title="Permalink to this headline">¶</a></h2>
+<p>If you find any bugs or issues, I will be really happy to fix them, just post problem description on <a class="reference external" href="https://github.com/MashMB/sublimecord/issues">GitHub issues page</a>. You can make it easier for me if you change only two lines of code in file <strong>discord_ipc.py</strong> that can be found in Sublime Text 3 packages folder named <strong>sublimecord</strong> (localization of packages is given above in <strong>Install</strong> section of this document).</p>
+<p>Replace line 25 with this code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">logger_level</span> <span class="o">=</span> <span class="s2">&quot;DEBUG&quot;</span>
+</pre></div>
+</div>
+<p>Also line 30 with this code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">logger</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="bp">True</span>
+</pre></div>
+</div>
+<p>After code replacement, restart Sublime Text 3 and open Sublime Text 3 console with <strong>ctrl + `</strong> shortcut. Try to connect to Discord, copy the console output that matches file <strong>discord_ipc.py</strong> and paste it on <a class="reference external" href="https://github.com/MashMB/sublimecord/issues">GitHub issues page</a>.</p>
+<p>As I am working all time on something new, do not be mad if fix will take some time.</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>The MIT License (MIT)</p>
+<p>Copyright (c) 2018 Maciej Bedra</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="docs/sublimecord.html" class="btn btn-neutral float-right" title="Sublimecord" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Maciej Bedra.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
