@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sublimecord &mdash; Sublimecord 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Sublimecord 1.0.0 documentation" href="../index.html"/>
+        <link rel="next" title="Extensions" href="extensions.html"/>
+        <link rel="prev" title="Welcome to documentation of Sublimecord!" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Sublimecord
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sublimecord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Extensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="extensions.html#sublime-text-3-informations">Sublime Text 3 informations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extensions.html#unknown-file-informations">Unknown file informations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extensions.html#supported-programming-languages">Supported programming languages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="discord_ipc.html">Discord IPC Wrapper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="discord_ipc.html#wrapper-content-significant-files">Wrapper content (significant files)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discord_ipc.html#discord-ipc-wrapper-documentation">Discord IPC wrapper documentation</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Sublimecord</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Sublimecord</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sublimecord">
+<h1>Sublimecord<a class="headerlink" href="#sublimecord" title="Permalink to this headline">¶</a></h1>
+<p>Sublime Text 3 commands, event handler and connection to Discord via Discord IPC wrapper.</p>
+<dl class="class">
+<dt id="Sublimecord">
+<em class="property">class </em><code class="descname">Sublimecord</code><a class="headerlink" href="#Sublimecord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Singleton class that gives all necessary tools
+to send Discord Rich Presence with data
+taken from Sublime Text 3.</p>
+<dl class="method">
+<dt id="Sublimecord.get_instance">
+<code class="descname">get_instance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Sublimecord.get_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Sublimecord instance if exists in other situation, create new instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Sublimecord instance</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Sublimecord" title="Sublimecord">Sublimecord</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Sublimecord.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#Sublimecord.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sublimecord constructor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Sublimecord.get_file_size">
+<code class="descname">get_file_size</code><span class="sig-paren">(</span><em>self</em>, <em>characters</em><span class="sig-paren">)</span><a class="headerlink" href="#Sublimecord.get_file_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converting characters quantity to size on which computer operate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>characters</strong> (<em>int</em>) – characters to convert quantity</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">size on which computer operate with proper size definition</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Sublimecord.connect_to_discord">
+<code class="descname">connect_to_discord</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#Sublimecord.connect_to_discord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connect to Discord and send initial Discord Rich Presence.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Sublimecord.disconnect_from_discord">
+<code class="descname">disconnect_from_discord</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#Sublimecord.disconnect_from_discord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disconnect from Discord and reset ipc object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Sublimecord.get_file_properties">
+<code class="descname">get_file_properties</code><span class="sig-paren">(</span><em>self</em>, <em>view</em><span class="sig-paren">)</span><a class="headerlink" href="#Sublimecord.get_file_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getting opened file name, extension and size.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>view</strong> (<em>View</em>) – Sublime Text view instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Sublimecord.get_project_name">
+<code class="descname">get_project_name</code><span class="sig-paren">(</span><em>self</em>, <em>window</em><span class="sig-paren">)</span><a class="headerlink" href="#Sublimecord.get_project_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getting opened project name (opened folder).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>window</strong> (<em>Window</em>) – Sublime Text window instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Sublimecord.change_status">
+<code class="descname">change_status</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#Sublimecord.change_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check variables content, prepare titles and
+send Discord Rich Presence.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ConnectCommand">
+<em class="property">class </em><code class="descname">ConnectCommand</code><span class="sig-paren">(</span><em>sublime_plugin.WindowCommand</em><span class="sig-paren">)</span><a class="headerlink" href="#ConnectCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that allows connect to Discord via Discord IPC socket and send initial Discord Rich Presence status.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Param:</th><td class="field-body">class is extending WindowCommand class from sublime_plugin package</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="ConnectCommand.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#ConnectCommand.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get project name, file name, file extension, connect to Discord and send initial Discord Rich Presence. WindowCommand overriden method.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="DisconnectCommand">
+<em class="property">class </em><code class="descname">DisconnectCommand</code><span class="sig-paren">(</span><em>sublime_plugin.WindowCommand</em><span class="sig-paren">)</span><a class="headerlink" href="#DisconnectCommand" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="DisconnectCommand.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#DisconnectCommand.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Proper way to disconnect from Discord. WindowCommand overriden method.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="EventHandler">
+<em class="property">class </em><code class="descname">EventHandler</code><span class="sig-paren">(</span><em>sublime_plugin.ViewEventListener</em><span class="sig-paren">)</span><a class="headerlink" href="#EventHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Event handler, sends Discord Rich Presence on specific action.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ViewEventListener</strong> (<em>ViewEventListener</em>) – class is extending ViewEventListener class from sublime_plugin package</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="EventHandler.on_activated">
+<code class="descname">on_activated</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#EventHandler.on_activated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update Discord Rich Presence status every time when Sublime Text 3 is connected and view gains focus.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="extensions.html" class="btn btn-neutral float-right" title="Extensions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Welcome to documentation of Sublimecord!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Maciej Bedra.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
