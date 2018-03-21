@@ -23,7 +23,7 @@ To activate plugin, just use **command palette**:
 
 After executing **connect** command, your status on Discord should be changed.
 
-In plugin settings you can find options to to hide project and file name.
+In plugin settings you can find options to hide project and file name.
 
 ====================================
 Why there is no autoconnect feature?
