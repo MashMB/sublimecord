@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Extensions &mdash; Sublimecord 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Sublimecord 1.0.0 documentation" href="../index.html"/>
+        <link rel="next" title="Discord IPC wrapper" href="discord_ipc.html"/>
+        <link rel="prev" title="Sublimecord" href="sublimecord.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Sublimecord
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sublimecord.html">Sublimecord</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Extensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sublime-text-3-informations">Sublime Text 3 informations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unknown-file-informations">Unknown file informations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#supported-programming-languages">Supported programming languages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="discord_ipc.html">Discord IPC Wrapper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="discord_ipc.html#wrapper-content-significant-files">Wrapper content (significant files)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discord_ipc.html#discord-ipc-wrapper-documentation">Discord IPC wrapper documentation</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Sublimecord</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Extensions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="extensions">
+<h1>Extensions<a class="headerlink" href="#extensions" title="Permalink to this headline">¶</a></h1>
+<p>File containing all supported extensions, assets names and other static informations.</p>
+<div class="section" id="sublime-text-3-informations">
+<h2>Sublime Text 3 informations<a class="headerlink" href="#sublime-text-3-informations" title="Permalink to this headline">¶</a></h2>
+<p>Default text to display and icon file name.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sublime_text</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;logo&quot;</span><span class="p">:</span> <span class="s2">&quot;st3_logo&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;header&quot;</span><span class="p">:</span> <span class="s2">&quot;Sublime Text 3&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="unknown-file-informations">
+<h2>Unknown file informations<a class="headerlink" href="#unknown-file-informations" title="Permalink to this headline">¶</a></h2>
+<p>Text and icon file name designed when unknow file occured.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">unknown</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown_file&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;header&quot;</span><span class="p">:</span> <span class="s2">&quot;Unknown file&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="supported-programming-languages">
+<h2>Supported programming languages<a class="headerlink" href="#supported-programming-languages" title="Permalink to this headline">¶</a></h2>
+<p>List of all supported programming languages and their icons files names.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">supported</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;applescript&quot;</span><span class="p">:</span> <span class="s2">&quot;AppleScript&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;as&quot;</span><span class="p">:</span> <span class="s2">&quot;ActionScript&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;asa&quot;</span><span class="p">:</span> <span class="s2">&quot;ASP&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;asp&quot;</span><span class="p">:</span> <span class="s2">&quot;ASP&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bat&quot;</span><span class="p">:</span> <span class="s2">&quot;Batch File&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bib&quot;</span><span class="p">:</span> <span class="s2">&quot;BibTex&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="s2">&quot;C &quot;</span><span class="p">,</span>
+        <span class="s2">&quot;clj&quot;</span><span class="p">:</span> <span class="s2">&quot;Clojure&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cpp&quot;</span><span class="p">:</span> <span class="s2">&quot;C++&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cs&quot;</span><span class="p">:</span> <span class="s2">&quot;C#&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;css&quot;</span><span class="p">:</span> <span class="s2">&quot;CSS&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="s2">&quot;D &quot;</span><span class="p">,</span>
+        <span class="s2">&quot;dot&quot;</span><span class="p">:</span> <span class="s2">&quot;Graphviz&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;erb&quot;</span><span class="p">:</span> <span class="s2">&quot;JavaScript (Rails)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;erbsql&quot;</span><span class="p">:</span> <span class="s2">&quot;SQL (Rails)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;erl&quot;</span><span class="p">:</span> <span class="s2">&quot;Erlang&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;go&quot;</span><span class="p">:</span> <span class="s2">&quot;Go&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groovy&quot;</span><span class="p">:</span> <span class="s2">&quot;Groovy&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;haml&quot;</span><span class="p">:</span> <span class="s2">&quot;Ruby Haml&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hs&quot;</span><span class="p">:</span> <span class="s2">&quot;Haskell&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;html&quot;</span><span class="p">:</span> <span class="s2">&quot;HTML&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;java&quot;</span><span class="p">:</span> <span class="s2">&quot;Java&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;js&quot;</span><span class="p">:</span> <span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;json&quot;</span><span class="p">:</span> <span class="s2">&quot;Json&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;jsp&quot;</span><span class="p">:</span> <span class="s2">&quot;Java Server Page&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lhs&quot;</span><span class="p">:</span> <span class="s2">&quot;Literate Haskell&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lisp&quot;</span><span class="p">:</span> <span class="s2">&quot;Lisp&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lua&quot;</span><span class="p">:</span> <span class="s2">&quot;Lua&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;make&quot;</span><span class="p">:</span> <span class="s2">&quot;Makefile&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;matlab&quot;</span><span class="p">:</span> <span class="s2">&quot;MATLAB&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;md&quot;</span><span class="p">:</span> <span class="s2">&quot;Markdown&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ml&quot;</span><span class="p">:</span> <span class="s2">&quot;OCaml&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mll&quot;</span><span class="p">:</span> <span class="s2">&quot;OCamllex&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mly&quot;</span><span class="p">:</span> <span class="s2">&quot;OCamlyacc&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;pas&quot;</span><span class="p">:</span> <span class="s2">&quot;Pascal&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;php&quot;</span><span class="p">:</span> <span class="s2">&quot;PHP&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;pl&quot;</span><span class="p">:</span> <span class="s2">&quot;Perl&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;py&quot;</span><span class="p">:</span> <span class="s2">&quot;Python&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;r&quot;</span><span class="p">:</span> <span class="s2">&quot;R &quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rails&quot;</span><span class="p">:</span> <span class="s2">&quot;(HTML) Rails&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rb&quot;</span><span class="p">:</span> <span class="s2">&quot;Ruby&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rd&quot;</span><span class="p">:</span> <span class="s2">&quot;Rd (R Documentation)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rs&quot;</span><span class="p">:</span> <span class="s2">&quot;Rust&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rst&quot;</span><span class="p">:</span> <span class="s2">&quot;reStructuredText&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rxml&quot;</span><span class="p">:</span> <span class="s2">&quot;Ruby on Rails&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;scala&quot;</span><span class="p">:</span> <span class="s2">&quot;Scala&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;sh&quot;</span><span class="p">:</span> <span class="s2">&quot;Shell Script&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;sql&quot;</span><span class="p">:</span> <span class="s2">&quot;SQL&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;sty&quot;</span><span class="p">:</span> <span class="s2">&quot;TeX&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tex&quot;</span><span class="p">:</span> <span class="s2">&quot;LaTeX&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;textile&quot;</span><span class="p">:</span> <span class="s2">&quot;Textile&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;txt&quot;</span><span class="p">:</span> <span class="s2">&quot;Plain text&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;xml&quot;</span><span class="p">:</span> <span class="s2">&quot;XML&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;yaml&quot;</span><span class="p">:</span> <span class="s2">&quot;YAML&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;yaws&quot;</span><span class="p">:</span> <span class="s2">&quot;HTML (Erlang)&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="discord_ipc.html" class="btn btn-neutral float-right" title="Discord IPC wrapper" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="sublimecord.html" class="btn btn-neutral" title="Sublimecord" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Maciej Bedra.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
